@@ -1,18 +1,15 @@
-# BOLA — Broken Object Level Authorization
-
-## Scenario
+BOLA — Broken Object Level Authorization
+Scenario
 
 The API contains projects belonging to different organizations.
 
-- Sofia belongs to Organization 1.
-- Project 101 belongs to Organization 1.
-- Project 202 belongs to Organization 2.
-
-## Test
+Sofia belongs to Organization 1.
+Project 101 belongs to Organization 1.
+Project 202 belongs to Organization 2.
+Test
 
 Authenticated as Sofia:
 
-```http
 X-User-ID: 1
 GET /projects/202
 Expected behavior
@@ -36,13 +33,3 @@ Authorization determines whether that requester can access the requested object.
 Status
 
 Vulnerable — remediation not yet implemented.
-
-
-### 3. Then scroll down
-
-You'll see **Commit changes**.
-
-For the commit message enter:
-
-```text
-Document initial BOLA finding
